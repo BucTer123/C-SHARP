@@ -11,8 +11,10 @@ class Program {
         Label txt1 = new Label();
         txt1.Text = "Welcome!";
         txt1.ImageIndex = 1;
+        txt1.Location = new Point(400, 300);
 
-
+        this.Controls.Add(txt1);
+        
         Application.run();
     }
 }
