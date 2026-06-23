@@ -10,6 +10,10 @@ class program {
     private static void Main() {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
+        InitializeComponent();
+
+        Form win1 = new Form();
+        win1.Text = "Window!";
 
         Label txt1 = new Label();
         txt1.Text = "Welcome!";
@@ -25,6 +29,8 @@ class program {
         this.Controls.Add(btn1);
 
         Application.run();
+
+        win1.Show();
         
     }
 }
