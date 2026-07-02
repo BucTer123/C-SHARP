@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Site</title>
+</head>
+<body></body>
+<script type="module">
+    import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+    kaboom();
+
+    kaboom([
+      background: [140, 70, 130];
+    ])
+
+    add([
+      text("Welcome, This is my site!");
+      pos(120, 80);
+   ])
+
+   function addButton(txt, p, f) {
+       const btn = add([
+         rect(240, 80, {radius : 8});
+         pos(p);
+         anchor("center");
+         area();
+         outline(4);
+      ]);
+
+     btn.add([
+       text(txt);
+       anchor("center");
+       color(0, 0, 0);
+     ])
+
+     btn.onHoverUpdate( () {
+       const t = time() * 10;
+       btn.color = hsl2rgb((t / 10) % 1, 0.6, 0.7);
+       btn.scale = vec(1.2);
+       setCursor("pointer");
+     });
+
+     btn.onHoverEnd( () {
+       btn.scale = vec(1.2);
+       btn.color = rgb();
+     });
+
+     btn.onClick(f);
+
+     return btn;
+   }
+
+  addButton("Leave", vec2(200, 200), () => debug.log("Nope"));
+  addButton("Go to kaboom.js site"), vec2(200, 100), () => window.location.href = "https://kaboomjs.com/");
+  
+</script>
+</html>
