@@ -19,7 +19,7 @@ public class sharpes_ui
         button.Text = name_button;
     }
 
-    void Label(string name_label, int position_x, int position_y)
+    void Label(string name_label, int position_xlabel, int position_ylabel)
     {
         Label label = new Label();
         label.Locatin = new Point(position_x, position_y);
