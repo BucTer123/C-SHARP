@@ -12,7 +12,7 @@ public class sharpes_ui
         window.Show();
     }
 
-    void Button(string name_button, int position_x, int position_y)
+    void Button(string name_button, int position_xbutton, int position_ybutton)
     {
         Button button = new Button();
         button.Location = new Point(position_x, position_y);
