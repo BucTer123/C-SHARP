@@ -22,7 +22,7 @@ public class sharpes_ui
     void Label(string name_label, int position_xlabel, int position_ylabel)
     {
         Label label = new Label();
-        label.Locatin = new Point(position_x, position_y);
+        label.Locatin = new Point(position_xlabel, position_ylabel);
         label.Text = name_label;
     }
 }
