@@ -1,6 +1,6 @@
 using System;
 
-public class sharpes_cmd 
+public class Sharpes_cmd 
 {
     void output(String output_text) { Console.WriteLine(output_text); }
     void outputln(String outputln_text) { Console.WriteLine(outputln_text + "\n"); 
