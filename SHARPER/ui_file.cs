@@ -1,7 +1,7 @@
 using System.Windows.Forms;
 using System.Drawing;
 
-public class sharpes_ui
+public class Sharpes_ui
 {
     void Window(string name_window, int screen_width, int screen_height)
     {
